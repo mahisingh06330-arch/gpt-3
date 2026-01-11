@@ -3,26 +3,27 @@ import people from '../../assets/gpt3/Group 81.png'
 import ai from '../../assets/gpt3/Illustration.png'
 import './header.css'
 
-function Header() {
-  return (
-    <div className="gpt__header sectionk__padding" id="home">
-      <div className="gpt3__header-content">
-        <h1 className="gradient__text">Let's Build Something amazing with GPT-3 OpenAI</h1>
-        <p>Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment. Party we years to order allow asked of.</p>
-       <div className="gpt3__header-content__input">
+const Header = () => (
+  <div className="gpt3__header section__padding" id="home">
+    <div className="gpt3__header-content">
+      <h1 className="gradient__text">Let&apos;s Build Something amazing with GPT-3 OpenAI</h1>
+      <p>Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment. Party we years to order allow asked of.</p>
+
+      <div className="gpt3__header-content__input">
         <input type="email" placeholder="Your Email Address" />
         <button type="button">Get Started</button>
-       </div>
-       <div className="gpt3__header-content__people">
+      </div>
+
+      <div className="gpt3__header-content__people">
         <img src={people} alt="people"/>
-        <p>1.6k+ people requested access a visit in last 24 hours</p>
-       </div>
-       <div className="gpt3__header-image">
-        <img src={ai} alt="ai"/>
-       </div>
+        <p>1,600 people requested access a visit in last 24 hours</p>
       </div>
     </div>
-  )
-}
 
-export default Header
+    <div className="gpt3__header-image">
+      <img src={ai} alt="ai" />
+    </div>
+  </div>
+);
+
+export default Header;
